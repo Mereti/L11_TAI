@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class DataService {
 
-  private url = 'https://tai21-test.herokuapp.com/';
+  private url = 'https://git.heroku.com/lab-tai.git';
 
   constructor(private http: HttpClient) {
   }
@@ -26,6 +26,4 @@ export class DataService {
   createOrUpdate(post: any) {
     return this.http.post(`${this.url}/api/posts`, post);
   }
-
-
 }
